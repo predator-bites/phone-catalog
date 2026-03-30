@@ -6,7 +6,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/gadgets-catalogue',
+  base: '/gadgets-catalogue/',
   resolve: {
     alias: {
       '@modules': resolve(__dirname, 'src/modules'),
