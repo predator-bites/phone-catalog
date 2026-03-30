@@ -157,8 +157,11 @@ export const ProductPage: React.FC = () => {
 
   useEffect(() => {
     setInCart(isInCart?.(activeProduct) || false);
-    scrollToTop();
   }, [cart, activeProduct, isInCart]);
+
+  useEffect(() => {
+    scrollToTop();
+  }, [activeProduct]);
 
   useEffect(() => {
     if (activeProduct) {
